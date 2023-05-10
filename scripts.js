@@ -1,4 +1,4 @@
-var form = documents.getElementById("contact-form");
+var form = document.getElementById("contact-form");
 
 function handleSubmit(event) {
     event.preventDefault();
@@ -6,9 +6,6 @@ function handleSubmit(event) {
     var name = form.elements["nome"].value;
     var email = form.elements["email"].value;
     var mensagem = form.elements["mensagem"].value;
-
-    console.log(nome, email, mensagem);
-
 
     var resultado = `Nome: ${name} \nE-mail: ${email} \nMensagem: ${mensagem}`;
     alert(resultado);
